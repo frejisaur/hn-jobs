@@ -1,0 +1,54 @@
+Game Platform Engineering Lead at ARC Prize Foundation | Y Combinator
+ARC Prize Foundation
+AI benchmarks that measure general intelligence and inspire new ideas
+Game Platform Engineering Lead
+$150K - $250K
+•
+US / Remote (US)
+Job type
+Full-time
+Role
+Engineering, Full stack
+Experience
+6+ years
+Visa
+US citizen/visa only
+Skills
+Amazon Web Services (AWS), Distributed Systems, Software Architecture
+Connect directly with founders of the best YC-funded startups.
+Apply to role ›
+Greg Kamradt
+President
+Greg Kamradt
+President
+About the role
+A senior engineer to own and evolve the game engine and real-time play infrastructure behind the ARC-AGI series. This person will be the technical owner of our Python game engine and the systems that deliver games to humans and agents. You'll be responsible for stabilizing the current stack to setting the foundation for what comes next. This is a remote, full-time role.
+What You'll Do:
+Own and evolve the Python game engine and developer tooling that power every
+ARC-AGI-3
+environment
+Run and harden the real-time play stack - session routing, scorecard management, recording pipelines, and reliability under load
+Maintain the game distribution and API authentication layer that gates access for agents and humans
+Help lay the game and environment foundations for ARC-AGI-4 and ARC-AGI-5
+What We're Looking For:
+Hands-on experience building or maintaining a game engine (must), with strong Python fundamentals (must)
+Distributed systems background - real-time sessions, cloud infrastructure (AWS), and production reliability
+Senior enough to act as technical owner and architect of the game platform (we have a high agency team)
+About
+ARC Prize Foundation
+ARC Prize Foundation
+Founded:
+2024
+Batch:
+W26
+Team Size:
+4
+Status:
+Active
+Location:
+San Francisco
+Founders
+Greg Kamradt
+President
+Greg Kamradt
+President

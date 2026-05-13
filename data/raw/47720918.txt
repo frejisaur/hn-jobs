@@ -1,0 +1,83 @@
+Founding Product Engineer at Bild AI | Y Combinator
+Bild AI
+AI that understands construction blueprints
+Founding Product Engineer
+$100K - $180K
+•
+0.20% - 0.80%
+•
+San Francisco, CA, US
+Job type
+Full-time
+Role
+Engineering, Frontend
+Experience
+Any (new grads ok)
+Visa
+US citizen/visa only
+Skills
+JavaScript, React, TypeScript, Tailwind
+Connect directly with founders of the best YC-funded startups.
+Apply to role ›
+Roop Pal
+Co-Founder
+Roop Pal
+Co-Founder
+About the role
+We founded Bild AI to tackle the mess that is blueprint reading, cost estimation, and permit applications in construction. It's a tough technical problem that requires the newest CV and AI approaches, and we’re impact-driven to make it more efficient to build more houses, hospitals, and schools. Featured on
+Business Insider
+.
+You’ll
+Own features end-to-end — interview customers every week and watch them use the product, and ship the feature they need by the next week
+Build UIs that make complex blueprint and hardware data feel simple for people who've been doing this on paper for 20 years
+Work across the stack: React frontend, Python backend + infra
+Shape what we build next, not just how we build it
+We want
+Great product taste — you care about how things look, feel, and work for the user
+0-to-1 architect and builder who can work across the entire stack
+Comfort talking to customers directly and translating messy domain knowledge into clean product decisions
+Growth mindset, slope > y-intercept
+Communicate with empathy and honesty. Tell us what makes you happy/unhappy
+Don’t mind
+schlep
+. We are regularly knee-deep in schlep
+Bonus points (if any)
+Have built something people used/paid for (founder/startup)
+Have a construction background
+Are impact-driven
+Message with
+Why we’re a fit
+Your favorite fruit (mine is
+Sitaphal
+)
+(Please keep it short)
+Interview Process
+15 min intro
+1 hour whiteboard technical
+1 hour coding technical
+3-5 day paid work trial
+Logistics
+SF-based or willing to relocate, fulltime in-office
+About
+Bild AI
+Bild AI is an early-stage startup with a ton of really difficult technical challenges to solve. We're building blueprint understanding with a model-garden approach, so there is a lots of ground to break. We raised from the top VCs in the world before demo day and have a customer-obsessed approach to product development.
+Bild AI
+Founded:
+2024
+Batch:
+W25
+Team Size:
+5
+Status:
+Active
+Location:
+San Francisco
+Founders
+Roop Pal
+Co-Founder
+Roop Pal
+Co-Founder
+Puneet Sukhija
+Co-Founder
+Puneet Sukhija
+Co-Founder

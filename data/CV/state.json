@@ -1,0 +1,154 @@
+{
+  "seen_ids": {
+    "48120776": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:56:49.464773+00:00",
+      "url": "https://www.ycombinator.com/companies/substrate/jobs/T2fMBhD-technical-success-manager"
+    },
+    "48107024": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:56:50.641163+00:00",
+      "url": "https://www.ycombinator.com/companies/text-blaze/jobs/P4CCN62-the-blaze-no-ai-summer-internship"
+    },
+    "48098122": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:34.139690+00:00",
+      "url": "https://bild.ai/jobs"
+    },
+    "48083251": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:35.958540+00:00",
+      "url": "https://jobs.ashbyhq.com/9-mothers?utm_source=x8pZ4B3P3Q"
+    },
+    "48068732": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:56:54.485346+00:00",
+      "url": "https://www.mux.com/jobs"
+    },
+    "48048339": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:56:55.664179+00:00",
+      "url": "https://www.ycombinator.com/companies/governgpt/jobs/hRyltS0-backend-engineer-thinking-systems"
+    },
+    "48035223": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:56:57.031050+00:00",
+      "url": "https://www.coveragecat.com/careers/engineering/fractional-growth-engineer"
+    },
+    "48025244": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:56:58.174961+00:00",
+      "url": "https://www.ycombinator.com/companies/proliferate/jobs/L3copvK-founding-engineer"
+    },
+    "47983385": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:56:59.340501+00:00",
+      "url": "https://www.ycombinator.com/companies/collectwise/jobs/rEWfZ6R-senior-forward-deployed-engineer"
+    },
+    "47955226": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:00.532792+00:00",
+      "url": "https://www.ycombinator.com/companies/gooseworks/jobs/ztgY6bD-founding-growth-engineer"
+    },
+    "47947125": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:01.713796+00:00",
+      "url": "https://www.ycombinator.com/companies/stardex/jobs/6GCK1HC-founding-customer-success-lead"
+    },
+    "47937203": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:37.454996+00:00",
+      "url": "https://jobs.ashbyhq.com/infisical/782b9da8-20e1-48b2-919e-6c5430c58628"
+    },
+    "47908047": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:04.202438+00:00",
+      "url": "https://www.ycombinator.com/companies/terra-api/jobs/DY7BCZU-applied-ai-strategist-market-intelligence-health"
+    },
+    "47874734": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:05.702796+00:00",
+      "url": "https://jiga.io/about-us/"
+    },
+    "47851456": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:06.874233+00:00",
+      "url": "https://www.ycombinator.com/companies/trellis-ai/jobs/SvzJaTH-member-of-technical-staff-product-engineering-full-time"
+    },
+    "47837176": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:08.025539+00:00",
+      "url": "https://www.ycombinator.com/companies/trybloom/jobs"
+    },
+    "47817473": {
+      "status": "failed",
+      "error": "browser_insufficient",
+      "failed_at": "2026-05-13T17:58:03.641067+00:00",
+      "url": "https://up.codes/careers?utm_source=HN"
+    },
+    "47810507": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:10.444706+00:00",
+      "url": "https://www.ycombinator.com/companies/arc-prize-foundation/jobs/AKZRZDN-platform-engineer-benchmark-lead"
+    },
+    "47808047": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:11.605357+00:00",
+      "url": "https://www.ycombinator.com/companies/kyber/jobs/TcEa3b5-head-of-engineering"
+    },
+    "47802016": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:12.743194+00:00",
+      "url": "https://www.ycombinator.com/companies/substrate/jobs/QJU9023-harness-engineer"
+    },
+    "47789607": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:13.901160+00:00",
+      "url": "https://www.ycombinator.com/companies/ramain/jobs/bwtwd9W-founding-gtm-operations-lead"
+    },
+    "47781912": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:15.072346+00:00",
+      "url": "https://www.ycombinator.com/companies/adaptional/jobs/k7W6ge9-founding-engineer"
+    },
+    "47777902": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:16.217466+00:00",
+      "url": "https://www.ycombinator.com/companies/proliferate/jobs/L3copvK-founding-engineer"
+    },
+    "47775606": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:17.358646+00:00",
+      "url": "https://www.ycombinator.com/companies/mdalgorithms-inc/jobs/LVODKN7-growth-marketer-for-a-rapidly-growing-consumer-ai-healthcare-startup"
+    },
+    "47741953": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:18.780050+00:00",
+      "url": "https://www.easypost.com/careers"
+    },
+    "47720918": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:19.922841+00:00",
+      "url": "https://www.ycombinator.com/companies/bild-ai/jobs/dDMaxVN-founding-product-engineer"
+    },
+    "47713744": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:21.100935+00:00",
+      "url": "https://www.ycombinator.com/companies/collectwise/jobs/Ktc6m6o-ai-agent-engineer"
+    },
+    "47675302": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:58:06.023574+00:00",
+      "url": "https://jobs.ashbyhq.com/9-mothers?utm_source=x8pZ4B3P3Q"
+    },
+    "47667011": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:23.210787+00:00"
+    },
+    "47660343": {
+      "status": "fetched",
+      "fetched_at": "2026-05-13T17:57:24.277852+00:00"
+    }
+  },
+  "last_poll": "2026-05-13T17:57:24.277875+00:00"
+}

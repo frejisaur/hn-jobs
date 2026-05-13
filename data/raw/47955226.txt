@@ -1,0 +1,148 @@
+Founding Growth Engineer at Gooseworks | Y Combinator
+Gooseworks
+OpenClaw-style AI coworkers for GTM teams
+Founding Growth Engineer
+$140K - $200K
+•
+0.50% - 1.50%
+•
+San Francisco, CA, US
+Job type
+Full-time
+Role
+Marketing
+Experience
+Any (new grads ok)
+Visa
+Will sponsor
+Connect directly with founders of the best YC-funded startups.
+Apply to role ›
+Shiv Sakhuja
+Founder
+Shiv Sakhuja
+Founder
+About the role
+Founding Growth Engineer – Gooseworks
+Gooseworks is hiring a Founding Growth Engineer!
+This is
+a builder role for someone who lives in Claude Code
+/ Codex / OpenClaw / Hermes and is obsessed with growth as a craft. Not a typical sales / marketer role.
+Half your time goes to building, operating and tuning AI-powered growth engines for customers; the other half goes to R&D — turning what works into self-serve playbooks that Goose agents can run autonomously.
+What is Gooseworks
+Gooseworks is the workspace where companies stand up and manage teams of AI coworkers that do real growth work — outbound, content, SEO/AEO, Reddit growth, partnerships, UGC, influencer marketing, and more.
+Each coworker has its own computer, memory, files, channels, skills, and tools. Our thesis: Growth & GTM work is about to transform the way coding did three years ago. The bottleneck isn't the models — it's orchestration, context, and the workspace these agents live in.
+We sell two things:
+The product
+— a workspace where AI coworkers run growth engines. PLG, self-serve.
+Growth-as-a-service
+— bespoke growth engines we configure and run for B2B startups. This is also our learning loop: every customer engine becomes a templatized playbook on the product.
+Our wedge ICP is founders, GTM engineers and growth operators at fast growing startups. People who know what good growth looks like and want to execute 10x faster.
+About the team
+We’re a small team of 3 people that previously built Athina AI, an LLM observability & evaluation platform that was used by companies like Perplexity,
+You.com
+, Doximity, Meesho, and several public companies.
+Gooseworks
+is new, only a couple of months old.
+In the last couple of months itself, we’ve:
+built and shipped a product with paying customers
+attracted thousands of signups and over 50 paying customers
+built a
+skill library
+with 100+ GTM skills that was featured in TLDR newsletter
+went viral on X over 5 times with 1.5M impressions on socials
+grown a subreddit to 30k monthly visitors and over 2,000 community members
+A large part of this was done by Goose, our AI coworker.
+Now we’re scaling what works. More, bigger, better for ourselves and our customers.
+What you'll own
+Two things, ~50/50:
+1. Customer growth engines (50%)
+You own customer outcomes. End-to-end. Outbound campaigns, SEO content, Reddit growth, AEO, influencer sourcing — whatever moves the customer's KPI. You build the engine (skills, automations, context, integrations), run it, and iterate weekly with the customer until the numbers move.
+The bar isn't "we shipped the engine." It's "the customer hit their KPI."
+2. R&D for AI coworkers (50%)
+Every customer engine you build becomes a templatized playbook in Gooseworks. You're the loop that turns one-off agency work into self-serve product. You also push the boundaries of what Goose agents can do autonomously — new agent architectures, new skills, new playbooks for channels we haven't cracked yet.
+You'll contribute to our public skills repo, ship cornerstone agent systems, and help define what "an AI coworker that runs growth" actually means.
+First 7 days
+Onboard and get to know the team
+Create skills for our public repository
+Set up 1-2 useful growth engines end-to-end (for Gooseworks!)
+First 30 days
+Build more growth engines end-to-end.
+Templatize these into playbooks that customers can configure self-serve.
+Work with customers to tailor the growth engines for them, identify issues, help guide product feedback, and do whatever is needed to help customers grow their business
+R&D to experiment with new playbooks we can configure
+3 months in
+You're orchestrating a fleet of AI coworkers to help us and our customers grow.
+You're helping to solve problems to unblock deals with larger customers
+Who you are
+If you're one of these, you're probably a good fit.
+A. High-signal ex-founder
+You raised a seed round and built something real, bootstrapped a profitable business, got acquired by a credible buyer, or personally drove material pipeline / revenue / audience growth at your own startup.
+Viral launches and Product Hunt #1s don't clear the bar on their own — those are gameable and one-time. We want evidence of compounding work.
+B. AI-native, high-output growth IC
+You've personally taken a startup from X → Y on growth, with measurable proof:
+Revenue
+you personally drove
+Audience
+that converts (not vanity metrics)
+Pipeline
+sourced and closed through engineered systems
+C. AI-native agency operator
+You've run growth-as-a-service for multiple companies. You think in systems, not channels.
+Across all archetypes — non-negotiable signals
+You live in Claude Code / OpenClaw / Hermes.
+Not "I tried it once." You've built non-trivial agent systems on these tools. This is the single strongest signal we evaluate.
+AI-native by default.
+Your first instinct on any task is "how do I get an agent to do this?"
+Customer-obsessed.
+You have specific examples of going to absurd lengths to get a customer a result.
+Adaptable.
+Priorities will shift week to week, sometimes day to day.
+High-output generalist.
+Good taste in design, growth, sales, content. Not a specialist.
+Hands dirty.
+Some things can't be automated. You roll up your sleeves and do the work.
+This is not for you if...
+You haven't done real work inside Claude Code / OpenClaw / Hermes
+You'd rather do the work yourself than teach an agent to do it
+You want predictable hours roadmap
+You're optimizing for title or comp ladder over the work
+How to apply
+We want to know
+What’s the most impressive growth result you've personally driven?
+Examples of agentic systems and / or growth engines you've built
+Anything else you think is impressive and you want us to see
+About the interview
+Intro w/ Shiv
+— 30 min. Your story, what you've built, what you're optimizing for.
+Working session w/ Shiv + Himanshu
+— 60–90 min. You walk us through an agent system you've actually built, screen-shared, live.
+Take-home
+— 4–6 hours, paid. Brief: design and ship a playbook that lets a Claude / Goose agent run an outbound campaign end-to-end for a target customer we provide. Best submissions may end up in our public skills repo (with your permission).
+Paid trial
+— 2–4 weeks, in-person SF, paid at $150k annual prorated. You build real growth engines for Gooseworks. We evaluate work ethic, intelligence, ability to solve hard ambiguous problems, and output quality.
+Offer
+— within a week of trial ending.
+About
+Gooseworks
+Goose is an OpenClaw-style AI coworker that can do real GTM work. Goose can find high-signal leads, run your SEO, run outbound campaigns, track competitors, pull marketing reports, manage your CRM and much more.
+Goose has its own filesystem, memories, mailbox and accounts. You can talk to Goose from Slack, Telegram, mail or anywhere just like any other coworker, and ask it to get work done.
+Gooseworks
+Founded:
+2022
+Batch:
+W23
+Team Size:
+5
+Status:
+Active
+Location:
+San Francisco
+Founders
+Himanshu Bamoria
+Founder
+Himanshu Bamoria
+Founder
+Shiv Sakhuja
+Founder
+Shiv Sakhuja
+Founder

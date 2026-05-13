@@ -1,0 +1,114 @@
+Head of Engineering at Kyber | Y Combinator
+Kyber
+Instantly draft, review, and send complex regulatory notices.
+Head of Engineering
+$220K - $280K
+•
+0.50% - 1.50%
+•
+New York, NY, US
+Job type
+Full-time
+Role
+Engineering, Full stack
+Experience
+6+ years
+Visa
+US citizen/visa only
+Skills
+Express, JavaScript, Node.js, PostgreSQL, React, Redis, TypeScript
+Connect directly with founders of the best YC-funded startups.
+Apply to role ›
+Arvind Sontha
+Founder
+Arvind Sontha
+Founder
+About the role
+At Kyber, we're building the next-generation document platform for enterprises. Today, our AI-native solution transforms regulatory document workflows, enabling insurance claims organizations to consolidate 80% of their templates, spend 65% less time drafting, and compress overall communication cycle times by 5x. Our vision is for every enterprise to seamlessly leverage AI templates to generate every document.
+Over the past 18 months, we’ve:
+>40x’d revenue and are profitable.
+Landed multiple six and seven figure, multi-year contracts with leading insurance enterprises.
+Launched strategic partnerships with industry leading software partners like Guidewire, Majesco, and Twilio Sendgrid.
+Kyber is backed by top Silicon Valley VCs, including Y Combinator and Fellows Fund.
+We're seeking a hands-on Head of Engineering with a clear line of sight to CTO. This role is ideal for someone who is already operating as a 10x engineer, thrives in early stage environments, and is excited to design and scale mission-critical AI systems from first principles.
+Responsibilities:
+Be the Technical Owner of the Product
+Own end-to-end technical decisions across backend, frontend, data, infra.
+Ship features personally while keeping the team unblocked.
+Prioritize an Aggressive Product Roadmap
+Lead sprint/weekly planning and keep priorities tight
+Protect focus: decisively manage tradeoffs, push back when needed
+Unlock Leverage to Boost Engineering Capacity
+Scale adoption of Agentic AI coding tools (Cursor, Claude Code, Greptile) into large scale engineering and product workflows to accelerate time to market.
+Establish reusable patterns and interfaces so engineers and agents aren’t reinventing everything.
+Champion Reliability, Security, and Customer Trust
+Own uptime, performance, and incident response.
+Implement monitoring/alerts + fast debugging workflows.
+Mentor & Raise the Engineering Bar
+Set expectations for quality and ownership.
+Help recruit and evaluate future hires.
+What We’re Looking For in You:
+10x Engineer with a love of building
+Your raw coding ability should be unmatched and only deeply amplified by AI.
+You love to build and relish seeing customers delighted by your work.
+Ship first, optimize and harden later
+You get something out as quickly as possible, prove it was the right thing to build, and then optimize and harden it.
+System Design Mastery
+You've architected large scale data-driven applications and have a full E2E understanding of what tradeoffs to make when.
+Systems-first thinking
+Not just in architecture, but also for how an AI-native engineering team will operate as we continue to grow.
+Accountability
+You're prepared and have been in roles before where you've had to hold other engineers accountable for their deliverables.
+Security and Compliance
+You've dealt with enterprise software compliance requirements (SOC 2, HIPAA, ISO, etc) and are comfortable incorporating those requirements in tandem with product build out.
+Our Values
+Possible Until Proven Otherwise
+Challenge assumptions with evidence. If it’s impossible, show us why.
+LOVE Your Customer
+Put customers at the heart of everything. Earn trust, deliver value, grow together.
+Take Pride In Your Craft
+Creating something from nothing is a privilege—embrace the process and perfect the details.
+Live Up To Your Expectations
+Set your standards high and let’s exceed them together—because no one should expect more of you than yourself.
+Have Fun & Nurture Those Around You
+The joy of building is amplified when shared. Remember to support, uplift, and celebrate each other as we grow.
+Benefits
+Competitive salary
+Generous stock package
+100% employer-covered medical, dental, and vision insurance
+Why Kyber?
+Join us in building and scaling a game-changing enterprise product powered by state-of-the-art AI. At Kyber, your contributions will directly impact how businesses handle some of their most critical workflows and customer interactions.
+If you’re obsessed with building, AI, and transforming enterprise workflows, we’d love to hear from you!
+How To Stand Out
+We want to hear from extraordinary individuals who are ready to shape the future of enterprise documents. To stand out, ask someone you’ve worked with to send your resume or LinkedIn profile, along with a brief 2-3 sentence endorsement, directly to arvind [at]
+askkyber.com
+.
+Referrals matter. They help us understand the impact you’ve already had and the kind of teammate you’ll be. A strong referee can elevate your application, so choose someone who knows your skills and character well.
+Apply today
+and help us bring enterprise documents into the AI-native age.
+About the interview
+Founder screen
+Take home practical
+Technical Deep Dive on Prior Project
+System Design Scaling Interview
+Leverage & Leadership Interview
+5 References
+About
+Kyber
+With Kyber, companies operating in regulated industries can quickly draft, review, and send complex regulatory notices. For example, when Branch Insurance's claims team has to settle a claim, instead of spending hours piecing together evidence to draft a complex notice, they can simply upload the details of the claim to Kyber, auto-generate multiple best in-class drafts, easily assign reviewers, collaborate on notices in real-time, and then send the letter to the individual the notice is for. Kyber not only saves these teams time, it also improves overall quality, accountability, and traceability.
+Kyber
+Founded:
+2022
+Batch:
+W23
+Team Size:
+5
+Status:
+Active
+Location:
+New York
+Founders
+Arvind Sontha
+Founder
+Arvind Sontha
+Founder

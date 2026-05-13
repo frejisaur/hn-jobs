@@ -1,0 +1,13 @@
+The job of a developer is becoming an orchestrator of AI agents. HackerRank is helping 2500+ companies change how they hire for this new world. We've played a critical role in developer hiring over the last 15 years, with 30m+ developers on our platform and now going through a founding moment -- reinventing the company for the agentic era.
+Specifically, we are changing hiring across 3 dimensions:
+> Tasks: Real-world tasks on code repositories vs standard algorithmic-style puzzles
+> Evaluation: AI fluency, orchestration skills vs functional correctness
+> Candidate experience: Agentic IDE vs a simple code editor
+We are already live across many companies and it's exciting to see the world finally move away from the old-school Leetcode style puzzles.
+Role
+The role of the FDE will be to help our customers implement the new hiring process and serve as a bridge between the product & customer teams as we rapidly build the new HackerRank.
+Being technically fluent and strong communication skills are critical. You will be working directly with engineering leaders at our customers to redesign how they evaluate talent.
+Location
+Santa Clara, New York, London, Bangalore (hybrid set up with 3 to 4 days/week in-office)
+How to apply
+Send me an email with evidence across these attributes: (a) Smart (b) Curiosity (c) Agency and (d) AI fluency

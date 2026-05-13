@@ -1,0 +1,77 @@
+AI Agent Engineer at CollectWise | Y Combinator
+CollectWise
+Automating consumer debt collection with AI
+AI Agent Engineer
+$200K - $300K
+•
+0.25% - 1.00%
+•
+New York, NY, US
+Job type
+Full-time
+Role
+Engineering, Backend
+Experience
+3+ years
+Visa
+US citizen/visa only
+Connect directly with founders of the best YC-funded startups.
+Apply to role ›
+Sean OBrien
+Founder
+Sean OBrien
+Founder
+About the role
+About Us
+CollectWise is a fast growing and well funded Y Combinator-backed startup. We’re using generative AI to automate debt collection, a $35B market in the US alone. Our AI agents are already outperforming human collectors by 2X, and we’re doing so at a fraction of the cost.
+With a team of five, we scaled to a $2 million annualized run rate in just a few months, and we are now hiring an AI Agent Engineer to help us reach $10 million within the next year.
+About the role
+CollectWise is hiring an AI Agent Engineer to build the infrastructure, prompting systems, and core architecture behind our voice AI agents. You will work at the intersection of AI infrastructure, prompt engineering, conversational design, and product development to build voice agents that power millions of consumer interactions.
+This is a highly technical role for someone who is equally comfortable building production-grade systems, writing and refining prompts and conversation flows, and designing rigorous testing frameworks to maximize real-world performance. You should be analytical, business-minded, and motivated by measurable outcomes.
+What you’ll do
+Build our voice AI infrastructure in LiveKit
+Design and own the architecture of our real-time voice agent systems, including orchestration, state management, latency optimization, prompting and reliability.
+Own the end-to-end prompting strategy for CollectWise voice agents, including conversation flows, tone, compliance-safe phrasing, guardrails, and edge-case handling.
+Build and maintain testing and evaluation frameworks for voice agent performance, including A/B testing, regression testing, conversation QA, benchmarking, and KPI reporting.
+Write, expand, and improve our core AI prompting to cover more real-world scenarios.
+Continuously iterate based on performance data, call outcomes, and customer feedback to improve containment, conversion, liquidation rates, and customer satisfaction.
+Optimize ASR, STT, TTS, turn-taking, interruption handling, and state transitions to improve voice quality and agent performance.
+Build scalable systems and tooling to support millions of voice interactions.
+Migrate client implementations from legacy voice AI infrastructure to the latest systems you build, while preserving client-specific customizations and workflows.
+Develop prompt and agent tooling, including versioning, rollout strategies, monitoring, safety checks, and debugging workflows.
+Work closely with product, operations, and leadership to translate business goals into high-performing voice agent behavior.
+What we’re looking for
+2+ years of experience in voice AI, conversational AI, prompt engineering, speech systems, or related agentic workflows.
+3+ years of experience in platform, infrastructure, or backend engineering.
+Strong experience with Node.js, AWS, and SQL.
+Experience building and shipping production systems in a startup or similarly fast-paced environment.
+Experience with voice orchestration platforms or agent frameworks such as LiveKit.
+Strong prompt writing instincts and the ability to design clear, effective, and resilient conversational flows.
+Strong analytical skills and comfort tying technical work directly to business outcomes and ROI.
+Excellent communication skills, high ownership, and a strong work ethic.
+Nice to have
+Experience with SIP trunking, telephony infrastructure, and production voice systems.
+Experience working with real-time audio pipelines, call routing, and carrier or telephony integrations.
+Familiarity with speech infrastructure in production environments.
+Compensation
+Salary: $200,000 to $300,000, depending on experience and qualifications
+Equity: 0.25% to 1%
+About
+CollectWise
+CollectWise is revolutionizing debt recovery with autonomous AI agents and an integrated legal network. We boost recovery rates, reduce costs, and maintain a positive brand image through respectful, data-driven interactions.
+CollectWise
+Founded:
+2024
+Batch:
+F24
+Team Size:
+8
+Status:
+Active
+Location:
+New York City, NY
+Founders
+Sean OBrien
+Founder
+Sean OBrien
+Founder

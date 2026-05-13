@@ -1,0 +1,63 @@
+Founding Engineer at Adaptional | Y Combinator
+Adaptional
+AI-powered insurance claims review
+Founding Engineer
+$180K - $280K
+•
+1.00% - 2.00%
+•
+San Francisco, CA, US
+Job type
+Full-time
+Role
+Engineering, Full stack
+Experience
+1+ years
+Visa
+US citizen/visa only
+Connect directly with founders of the best YC-funded startups.
+Apply to role ›
+Kevin Cox
+Founder
+Kevin Cox
+Founder
+About the role
+Adaptional is building AI for insurance. Insurance is one of the largest industries globally, and still manages huge amounts of work with manual data entry, outsourced teams, human error-checking, and 20-year-old software. We are building a platform that delivers the claude-code experience for insurance teams.
+Adaptional’s founders previously built and exited a VC-backed insurance startup and raised a $10m seed round, one of the largest insurtech seeds to date. We are working with top-10 insurance companies and are building a multi-product roadmap rapidly.
+As a founding engineer you will build the company at the earliest stage, both technically and culturally. The role of an engineer is evolving from writing code to being full-stack problem solvers (and using lots of AI agents to do it), and we are looking for AI-pilled engineers with strong technical foundations who are excited by this. You’ll build the core product, work directly with our customers, and do whatever it takes to make our customers successful.
+We work together in-person at an office in the Presidio, San Francisco.
+What you’ll do:
+Build new AI agents and features from scratch
+Obsess over evals and correctness in highly specialized domains
+Iterate on design and human-agent interaction patterns
+Embed regulatory and legal compliance into AI tasks
+Build backends that can support fast-scaling agentic workloads
+Secure systems for a highly discerning and regulated customer base
+Qualifications:
+Experienced full-stack software engineer — we care more about what you have done than years of experience
+You leverage agentic engineering heavily, but still care about your code and its quality
+Succeeded at something difficult and can share what you learned (ex. D1/national athletics, academic competitions, started or early at a startup, launched a new product, open source with real users, learned 3 languages for fun, etc.)
+Want to work directly with customers, go deep on insurance topics, and creatively solve their problems
+Compensation
+:
+Highly competitive cash & equity, based on experience and skill level
+About
+Adaptional
+Adaptional
+Founded:
+2024
+Batch:
+S25
+Status:
+Active
+Location:
+San Francisco
+Founders
+Kevin Cox
+Founder
+Kevin Cox
+Founder
+Suril Kantaria
+Founder
+Suril Kantaria
+Founder

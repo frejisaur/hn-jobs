@@ -1,0 +1,90 @@
+Member of Technical Staff, Product Engineering (full-time) at Trellis AI | Y Combinator
+Trellis AI
+AI for streamlining healthcare paperwork
+Member of Technical Staff, Product Engineering (full-time)
+$100K - $225K
+•
+0.10% - 1.50%
+•
+San Francisco, CA, US
+Job type
+Full-time
+Role
+Engineering, Full stack
+Experience
+Any (new grads ok)
+Visa
+US citizen/visa only
+Apply to
+Trellis AI
+and hundreds of other fast-growing YC startups with a single profile.
+Apply to role ›
+About the role
+Trellis builds and deploys computer use agents to get patients access to life-saving medicine.
+Our computer-use AI agents process billions of dollars worth of therapies annually with patients in all fifty states.
+We do this by automating document intake, prior authorizations, and appeals at scale to streamline operations and accelerate care. We classify medical referrals, understand chart notes, and automate contract and reimbursement search to provide patients with accurate coverage determinations and cost responsibility. Think of us as the Stripe of healthcare billing and reimbursements.
+Trellis is a spinout from Stanford AI Lab and is backed by leading investors including YC, General Catalyst, Telesoft Partners, and executives at Google and Salesforce.
+🧍🏻‍♂️Why work with us
+Real impact at massive scale
+: We serve patients in all fifty states and are scaling to hundreds of healthcare locations. You'll directly see the number of patients who received treatment because of the agents you built.
+Work with industry experts
+: Apply your AI alongside healthcare operations leaders who have overseen 50+ healthcare locations, gaining deep domain expertise while building cutting-edge technology.
+Be at the forefront of AI in healthcare
+: Build production-grade agentic systems that make critical healthcare decisions, backed by robust evaluation frameworks.
+Direct customer engagement
+: Work closely with F500 customers and the founding team. You'll wear multiple hats from technical architecture to customer success.
+Extreme ownership
+: Own key parts of Trellis's technical infrastructure and have opportunities to launch new initiatives that process billions in healthcare transactions.
+World-class team
+: Join team members who have won international physics olympiads, published economics research, were founding engineers at unicorn startups, and taught AI classes to hundreds of Stanford graduate students.
+Incredible growth and traction
+: We've
+grown revenue 10x
+in the past few months alone and have
+XX% market share in
+the specialty healthcare markets we serve.
+What you'll build
+Agentic frameworks for healthcare decision-making
+: Design and implement AI systems that autonomously navigate complex reimbursement logic and prior authorization workflows.
+24/7 AI co-workers
+: Build and deploy long-running agent workers that triage and process healthcare data around the clock, functioning as reliable digital teammates for care teams.
+Production-grade AI systems
+: Develop your agents within our comprehensive evaluation suite, ensuring production-ready performance from day one.
+Requirements
+Experience architecting, developing, and testing full-stack code end-to-end
+Expertise in programming languages such as Python, Go and ML/NLP libraries such as PyTorch, TensorFlow, Transformers
+Being proactive and a fast-learner with bias for action
+Experience working with relational and non-relational databases, especially Postgres
+Experience with data and ML infrastructure
+Open source contributions and projects are a big plus
+Experience with cloud platforms (e.g., AWS, Azure, GCP) and containerization technologies (e.g., Docker, Kubernetes) is a plus
+About
+Trellis AI
+Trellis helps healthcare providers treat more patients, faster—while eliminating pre-service paperwork.
+We automate document intake, prior authorizations, and appeals at scale to streamline operations and accelerate care.
+Our AI agent is trained on millions of clinical data points and converts messy, unstructured documents into clean, structured data directly in your EHR.
+With Trellis, leading healthcare providers and pharmaceutical companies were able to:
+Reduce time to treatment by over 90%
+Improve prior authorization approval and reimbursement rates
+Leverage structured data to enhance drug program performance and clinical decision-making
+Administrative costs account for over 20% of U.S. healthcare spending—delaying care, draining revenue, and driving staff burnout while having less visibility into patient care than ever before. We built Trellis to tackle this head on.
+Trellis AI
+Founded:
+2024
+Batch:
+W24
+Team Size:
+25
+Status:
+Active
+Location:
+San Francisco
+Founders
+Mac Klinkachorn
+Founder
+Mac Klinkachorn
+Founder
+Jacky Lin
+Founder
+Jacky Lin
+Founder

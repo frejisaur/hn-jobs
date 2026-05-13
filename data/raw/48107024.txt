@@ -1,0 +1,75 @@
+The Blaze "No AI Summer" Internship at Text Blaze | Y Combinator
+Text Blaze
+Slash commands anywhere
+The Blaze "No AI Summer" Internship
+$2K - $5K / monthly
+•
+Remote
+Job type
+Internship
+Role
+Engineering, Full stack
+School year
+Any
+Visa
+US citizenship/visa not required
+Skills
+Google Cloud, JavaScript, Python, React
+Connect directly with founders of the best YC-funded startups.
+Apply to role ›
+Scott Fortmann-Roe
+Founder
+Scott Fortmann-Roe
+Founder
+About the role
+The role
+We are excited to open applications to our “No AI Summer” internship.
+We invite dedicated late-college or early career candidates to apply for this role. You’ll be a great fit for this role if you:
+are excited to tackle complex problems
+enjoy engaging with users and solving their problems
+love building and creating
+are high-performing and driven
+Also, you aren’t allowed to use AI. At all. All summer.
+We want to train you, not LLMs, to become an excellent full-stack engineer. You’ll spend the summer tackling hard challenges and learning. It will be a lot of work, but you’ll have the opportunity to really develop yourself.
+Tech stack
+Primarily JavaScript based. Some Python.
+React is our primary web front end.
+GCP is our Cloud Provider
+Hmmm… Why “No AI”?
+Over the past two years we have seen as an industry an over-reliance on AI tools that have limited growth and development of new junior engineers. Once you move beyond simple tasks, this over-reliance can lead to poor quality work and wasted time for all involved.
+We want rockstars on our team to help us build amazing products – (ironic em-dash) to do that we’re banning AI in this internship.
+So… You guys must really hate AI?
+Not at all. AI is a very helpful tool. You can get a double-digit productivity improvement using it. We use it extensively. Part of our product suite is AI. Don’t apply if you hate AI.
+About us
+We’re a global company and hire around the world.
+We build productivity products, our primary product is Text Blaze with over 700,000 users with a 4.9/5 ★ rating with 1,800 reviews. The team works hard to make our products simple but also extremely powerful. To make this happen there are a lot of challenges and difficult tradeoffs in our work. We want to work hard with you to help you become a great engineer who thinks critically and can do amazing work.
+If you’re interested in joining, reach out. We’re a small team and you have the potential to have a high impact. This application role is for junior developers, but we’re also hiring for senior roles.
+Application
+Please send a short cover letter/note that shares:
+a coding project you are proud of (with link)
+an impressive achievement of yours (can be academic, coding related, business related, or personal)
+how you would take advantage of our “No AI Summer”
+This note should be no longer than five sentences.
+About
+Text Blaze
+Text Blaze saves time and increases comms quality by automating repeated tasks. Users save smart templates and insert them anywhere on the web using keyboard shortcuts. Templates can include placeholders, logic, dynamic fields, integrations with other apps, and more.
+Text Blaze
+Founded:
+2019
+Batch:
+W21
+Team Size:
+9
+Status:
+Active
+Location:
+San Francisco
+Founders
+Dan Barak
+Founder
+Dan Barak
+Founder
+Scott Fortmann-Roe
+Founder
+Scott Fortmann-Roe
+Founder

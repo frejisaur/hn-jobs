@@ -1,0 +1,89 @@
+Backend Engineer, Thinking Systems at GovernGPT | Y Combinator
+GovernGPT
+The RFP Platform Asset Managers Adopt
+Backend Engineer, Thinking Systems
+$115K - $175K CAD
+•
+0.25% - 0.75%
+•
+Montreal, QC, CA / Montreal, Quebec, CA
+Job type
+Full-time
+Role
+Engineering, Backend
+Experience
+1+ years
+Visa
+US citizenship/visa not required
+Skills
+Kubernetes, Nginx, PostgreSQL, Python, Docker, Natural Language Processing, Software Architecture, Software Security, Prompt Engineering
+Connect directly with founders of the best YC-funded startups.
+Apply to role ›
+Oliver Walerys
+Founder
+Oliver Walerys
+Founder
+About the role
+About the Team
+We’re a YC-backed, profitable startup that’s building agents to automate the most manual, critical function of managing multi-billion dollar investments - fundraising. Every day, Tier 1 funds rely on our product to close new and update existing investors.
+We build with the newest tools. Every role within our tight-knit, all-engineers team has incredible autonomy to go out and delight our users. If you want to go all in on coding agents, build knowledge graphs, or explore novel async ways of ingesting data at scale, you can do that here - everything we do is innovative at its core.
+This is just the start, we have much bigger plays planned in partnership with our customers to change how trillions of dollars of private capital is allocated in global financial markets.
+About the Role
+Our users rely on reasoning systems enabled in large part by a metadata-enriched database and scalable backend, to trust the decisions AI makes to automate real work. Of the 3 pillars we prioritize in our technical org for realizing agents (reasoning, database, and interface), you will work directly with the CTO to own the database. That means building autonomous systems to enrich data, serve it securely and efficiently, while collaborating with the ICs responsible for reasoning and interface.
+This is fundamentally a high-trust environment where we function as a cohesive innovation unit to build at the bleeding edge of what’s possible with LLMs. Your fit must be technical as much as cultural.
+In this role, you will:
+Architect backend services for scalable and reliable pre-processing of documents to be consumed by reasoning systems for more stochastic outputs.
+Own the design and delivery of novel data models to enable advanced reasoning.
+Maintain interfaces that are optimized to be utilized by coding agents and designers of other service layers (interface and reasoning).
+Be responsible for the reliability of services in production and work directly via our PaaS layer on Kubernetes to manage zero downtime deployments.
+Contribute to all of our automated infrastructure that supercharges us to build more via coding agents, automated preview environments, testing, etc.
+Develop patterns for agents to operate safely under constraints in secure environments.
+Adapt your role to focus on the aspects you like the most as our team scales.
+Work directly with a team of cross-disciplinary, A-player technologists who will give you the biggest challenge of your career.
+You are:
+Passionate about what you do, you’ve paved your own path and aren’t averse to making unconventional career moves.
+Experienced with seeing systems go to production, break, and fix.
+Self-guided in your exploration and can lead like an independent contributor.
+A team player where you like to own your own competencies but you know the output of a great group is more than just additive.
+Eager to learn, grow, and adopt the newest tools as the discipline of engineering fundamentally changes.
+Looking for a team that gives you more than your typical job.
+How to Stand Out:
+Write us about your unique skills and passions, how you like to work, what you believe about the future, a time you took a big bet on yourself, or anything else you think might help you stand out as a first principles, independent thinker. Less is more, we’re only looking for exceptional team fit.
+Stack
+Python/FastAPI
+Postgres
+Kubernetes on AWS
+LLMs
+Coding Agents
+This role is exclusively based in our Old Port Montreal office. We all have a few hours of overlap per day in person. It’s how we collaborate, build culture and make sure we’re having fun.
+You’ll vest meaningful equity as part of your compensation.
+About the interview
+Phone screening
+Show & tell about a project of yours
+On-site design session with CTO
+On-site with CEO
+About
+GovernGPT
+We’re a YC-backed, profitable startup that’s bringing the first knowledge worker automations to reality in asset management. Every day the biggest firms in private and public markets rely on our software to more accurately, transparently, and rapidly update their investors on billions in investments.
+We build with the newest tools and every role within our tight-knit, all-engineers team has incredible autonomy to go out and delight our users. If you want to test new models, meta-analyse thousands of documents asynchronously, or explore novel LLM interface ideas, you can do that here - everything we do is innovative at its core.
+This is just the start, we have much bigger plays planned in partnership with our customers to change how $20 trillion dollars of capital is allocated in global financial markets.
+GovernGPT
+Founded:
+2023
+Batch:
+W24
+Team Size:
+6
+Status:
+Active
+Location:
+Montreal, Canada
+Founders
+Mamal Amini
+Founder
+Mamal Amini
+Founder
+Oliver Walerys
+Founder
+Oliver Walerys
+Founder

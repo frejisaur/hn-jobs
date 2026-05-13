@@ -1,0 +1,64 @@
+Senior Forward Deployed Engineer at CollectWise | Y Combinator
+CollectWise
+Automating consumer debt collection with AI
+Senior Forward Deployed Engineer
+$240K - $300K
+•
+0.10% - 1.00%
+•
+New York, NY, US
+Job type
+Full-time
+Role
+Engineering, Full stack
+Experience
+1+ years
+Visa
+US citizen/visa only
+Connect directly with founders of the best YC-funded startups.
+Apply to role ›
+Sean OBrien
+Founder
+Sean OBrien
+Founder
+About the role
+About Us
+CollectWise is a fast growing and well funded Y Combinator-backed startup. We’re using generative AI to automate debt collection, a $35B market in the US alone. Our AI agents are already outperforming human collectors by 2X, and we’re doing so at a fraction of the cost.
+With a team of five, we scaled to a $2 million annualized run rate in just a few months, and we are now hiring a Senior Forward Deployed Engineer to help us reach $10 million within the next year.
+Role
+We are hiring a Senior Forward Deployed Engineer to lead customer implementations end-to-end. You’ll work at the intersection of engineering and operations, building the integrations and technical systems that bring clients into production.
+This role blends software engineering with hands-on customer work. You’ll thrive here if you enjoy ambiguity, love shipping quickly, and can translate business requirements into robust, testable systems. This is a highly visible, high-ownership role working closely with the founder and clients.
+Responsibilities
+Build and maintain custom integrations with client systems.
+Configure and productionize AI agents for each client (prompts, workflows, data transfers).
+Develop and implement client solutions using modern back-end frameworks.
+Translate vague customer requirements into clear technical specs and ship solutions quickly.
+Build internal tools to make implementations faster and more repeatable.
+Desired Qualifications
+Experience with Node.js, React.js, AWS, SQL, and GPT-5 or other LLMs.
+Experience building products in a production environment (your own startup, working at an early-stage startup, or a meaningful project from scratch).
+Very strong communication skills and work ethic.
+Experience or interest in voice AI.
+Versatility across disciplines.
+Compensation
+Salary range: $240,000 to $300,000, based on relevant experience and qualifications.
+Significant equity compensation.
+About
+CollectWise
+CollectWise is revolutionizing debt recovery with autonomous AI agents and an integrated legal network. We boost recovery rates, reduce costs, and maintain a positive brand image through respectful, data-driven interactions.
+CollectWise
+Founded:
+2024
+Batch:
+F24
+Team Size:
+8
+Status:
+Active
+Location:
+New York City, NY
+Founders
+Sean OBrien
+Founder
+Sean OBrien
+Founder

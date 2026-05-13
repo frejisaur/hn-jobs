@@ -1,0 +1,101 @@
+Applied AI Strategist - Market Intelligence (Health) at Terra API | Y Combinator
+Terra API
+API for developers to access health data
+Applied AI Strategist - Market Intelligence (Health)
+£40K - £120K GBP
+•
+London, England, GB
+Job type
+Full-time
+Role
+Operations
+Experience
+3+ years
+Visa
+Will sponsor
+Apply to
+Terra API
+and hundreds of other fast-growing YC startups with a single profile.
+Apply to role ›
+About the role
+What this role actually is
+This is not “market research.”
+No 60‑page decks. No generic “digital health is big” observations.
+This is a continuous loop:
+market → signal → implication → decision → shipped product.
+Your job is to keep Terra’s roadmap and GTM pointed at the sharpest opportunities across AI × health, using:
+live conversations with users and near‑users,
+Terra’s own data and product surfaces,
+and the messy, high‑resolution context everyone else ignores.
+What you’ll do
+You will:
+Obsess over the people building on health data and AI
+Talk to founders, PMs, engineers, ops people, and researchers building on top of wearables, labs, and longitudinal health data.
+Extract what they’re actually trying to achieve, where they’re stuck, and what they’d pay for if it existed.
+Turn chaos into sharp segments
+Break the world into concrete, actionable segments like “AI assistants for metabolic health decisions” or “B2B platforms embedding Terra‑like health memory.”
+For each one: what they need from Terra, how big it is, and how fast we can move.
+Spot early product patterns from Terra’s own signals
+Read our usage, logs, support threads, builder questions, and integration patterns.
+Turn that into: “these are the workflows emerging on Terra; here’s the product that would make them 10x easier.”
+Live where our builders live
+Hang out in the places our users actually are: GitHub, AI forums, communities, niche health and bio circles, Telegram / Discord, X threads.
+Pull out early weirdness and translate it into “here’s a bet we should place.”
+Feed the team with decision‑grade direction
+For product: what to build, in what order, and which segments to explicitly ignore for now.
+For GTM: which users and use‑cases to prioritize this quarter, and what language will actually land.
+Ship clear, small artifacts
+Short memos, briefs, Looms-whatever works-as long as it’s clear.
+One screen, one idea, one decision.
+How you think
+You probably recognize yourself in most of this:
+You operate at street‑level resolution: real users, real tools, real workflows—not abstract “AI will change healthcare” slides.
+You like being early more than being universally agreed with.
+You’re comfortable saying “this is my best read with incomplete data, here’s the cost of being wrong.”
+You think in systems: products, data, incentives, distribution.
+You are allergic to analysis that doesn’t change what people
+do
+.
+You are AI‑native: you reach for Perplexity / GPT / agents the way others reach for spreadsheets.
+You instinctively ask “how would an AI use this data?” and “what does this unlock for ai?” when you see a new product idea.
+What we care about
+We don’t care about “years of experience.” We care about how you see and how you move.
+You might have:
+run product/market research or strategy at a startup, fund, or product org;
+built or worked around AI products, agents, or pipelines—and can show us your prompts, flows, or internal tools;
+done real work around health, data, or AI products (or can prove you climbed the curve fast);
+examples where your work directly changed a roadmap, pricing, positioning, or a go/no‑go decision.
+You definitely:
+move fast and don’t hide behind “we need more data”;
+can show written work that is brutally clear and directly actionable;
+are comfortable sitting close to founders and saying “I disagree, here’s why” when your read says so.
+About
+Terra API
+What we do
+Terra is the infrastructure layer for health data access.
+Health data is trapped across hundreds of siloed sources: wearables, sensors, health apps, medical devices, blood tests, team systems, and clinical platforms. Every source has its own authentication, permissions, schema, latency, edge cases, and reliability problems.
+Terra abstracts all of that into one platform.
+We give companies a single way to connect to health data, normalize it, stream it, analyze it, and build products on top of it. Today, Terra powers some of the top health companies in the world, as well as leading AI labs building the next generation of health intelligence.
+We deliver more than 30 billion activities per year through infrastructure built for scale, security, and reliability.
+Vision
+The future of health is extreme personalization.
+Health will move from care plans to goal setting: living to 120, winning the Olympics, becoming sharper, reversing disease, or performing at the top of any field.
+AI will help people understand themselves, predict outcomes 10 years ahead, and choose what they want to become.
+To do that, AI needs continuous, permissioned, real-world health data from every source.
+Terra is building the infrastructure that makes this possible.
+Terra API
+Founded:
+2021
+Batch:
+W21
+Team Size:
+25
+Status:
+Active
+Location:
+London, United Kingdom
+Founders
+Kyriakos Eleftheriou
+Founder
+Kyriakos Eleftheriou
+Founder

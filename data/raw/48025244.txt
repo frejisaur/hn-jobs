@@ -1,0 +1,77 @@
+Founding Engineer at Proliferate | Y Combinator
+Proliferate
+Manage a team of agents from your desktop
+Founding Engineer
+$200K - $350K
+•
+0.50% - 2.00%
+•
+San Francisco, CA, US
+Job type
+Full-time
+Role
+Engineering, Full stack
+Experience
+Any (new grads ok)
+Visa
+Will sponsor
+Connect directly with founders of the best YC-funded startups.
+Apply to role ›
+Pablo Hansen
+Founder
+Pablo Hansen
+Founder
+About the role
+About Proliferate
+Proliferate is building the operating system for modern engineering.
+We are building the company in person in SoMa, San Francisco. We care a lot about intensity, craft, and working with people who want to do the best work of their careers. We work hard, and we also take health seriously: company-expensed Whoop, meaningful health and wellness budget, and top-tier insurance.
+About the Founder
+I (Pablo) finished my master's in AI at 19 and joined Onyx (YC W24) as engineer #1, where I spent a year building enterprise AI search before starting Proliferate. You can see what I shipped there
+here
+. We’ll be working closely together.
+About the Role
+You’d be one of our first engineering hires and build the core product. This is a high-ownership role across product, systems, and user experience.
+Example work:
+Build a new core workflow end to end across agent runtime, product UI, and cloud infrastructure.
+Design and ship a new interface for human-agent collaboration made possible by a model capability that landed last week.
+Turn a rough customer pain point into a polished product surface in days.
+Re-think how engineering teams review, redirect, and trust agent work before merge.
+Who We’re Looking For
+We have an extremely small, flat, talent-dense team. We value urgency, taste, truth-seeking, and people who care deeply about the quality and impact of their work.
+You might be a great fit if:
+You've shipped products from 0 to 1
+You want a role that is unusually dense in learning, ownership, and pace
+You want to work with teammates who have very high standards
+You care deeply about what you build and who you build it with
+You want to do your life's work and enable other people to do theirs
+Stack
+TypeScript, React, Next.js, Python, Postgres, Redis, AWS, Rust
+Comp & Benefits
+Top-of-market salary plus meaningful equity, full health/dental/vision, all meals covered, equipment budget, and a monthly health and wellness stipend.
+About the interview
+Interview Process
+1. Initial questions (3 minutes)
+4 short questions through Work at a Startup. Emphasis on short! Should be around 3 sentences max per answer
+2. Phone call with Pablo (15 minutes)
+A quick call to get to know each other
+3. Technical round (30 minutes)
+We’ll talk through a technical problem together with a codebase open on your end
+4. Work trial (1-3 days, $1-3K)
+Come to our office by Salesforce Park in SF and we'll try working together. If this isn't possible due to extenuating circumstances, we can make accommodations
+5. References + Offer
+About
+Proliferate
+Proliferate
+Founded:
+2025
+Batch:
+S25
+Status:
+Active
+Location:
+San Francisco
+Founders
+Pablo Hansen
+Founder
+Pablo Hansen
+Founder
