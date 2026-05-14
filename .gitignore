@@ -1,6 +1,19 @@
 # mac files
-*.DS_store
+.DS_Store
 
-# python files
-*__pycache__
+# python
+__pycache__/
+*.pyc
 *.egg
+*.egg-info/
+dist/
+build/
+
+# env
+.env
+.venv/
+venv/
+
+# claude code (machine-specific)
+.claude/settings.local.json
+*.bak
