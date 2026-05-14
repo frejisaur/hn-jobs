@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HN Jobs — Blueprint</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-primary: #EDE8DE;
+    --bg-secondary: #F5F0E8;
+    --text-primary: #2D2926;
+    --text-secondary: #6B6560;
+    --text-tertiary: #9C9590;
+    --accent-peach: #D4A08A;
+    --accent-peach-light: #E8C8B8;
+    --accent-lavender: #B8A0C8;
+    --accent-lavender-light: #D4C4E0;
+    --accent-sand: #D4C4A8;
+    --accent-coral: #C86830;
+    --grid-line: #C8C0B4;
+    --grid-line-light: #DDD8D0;
+    --surface-dark: #2D2926;
+    --surface-dark-text: #EDE8DE;
+    --border-dashed: #A8A098;
+    --shadow-card: 0 2px 8px rgba(45, 41, 38, 0.08);
+    --ease-precise: cubic-bezier(0.25, 0.1, 0.25, 1);
+    --ease-organic: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    background-image:
+      linear-gradient(var(--grid-line-light) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-line-light) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .header {
+    padding: 2.5rem 2rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .header::before {
+    content: 'A1';
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.625rem;
+    color: var(--grid-line);
+    letter-spacing: 0.08em;
+  }
+
+  .header h1 {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .header h1 span { color: var(--accent-coral); }
+
+  .header-subtitle {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-style: italic;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-top: 0.25rem;
+  }
+
+  /* Filter Bar */
+  .filter-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg-secondary);
+    border-top: 1.5px solid var(--text-primary);
+    border-bottom: 1.5px solid var(--text-primary);
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    align-items: end;
+    flex-wrap: wrap;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+    min-width: 160px;
+  }
+
+  .filter-group.search { flex: 2; min-width: 240px; }
+
+  .filter-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-secondary);
+  }
+
+  .filter-input {
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    font-size: 0.9375rem;
+    padding: 0.5rem 0.75rem;
+    border: 1.5px solid var(--grid-line);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    border-radius: 2px;
+    outline: none;
+    transition: border-color 150ms var(--ease-precise);
+    width: 100%;
+  }
+
+  .filter-input:focus { border-color: var(--accent-coral); }
+  .filter-input::placeholder { color: var(--text-tertiary); }
+
+  select.filter-input {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%236B6560' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    padding-right: 2rem;
+  }
+
+  .result-count {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+    align-self: end;
+    white-space: nowrap;
+  }
+
+  /* Job Grid */
+  .jobs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    gap: 1.25rem;
+  }
+
+  /* Job Card */
+  .job-card {
+    border: 1.5px dashed var(--border-dashed);
+    padding: 1.5rem;
+    background: var(--bg-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: border-color 250ms var(--ease-precise), box-shadow 250ms var(--ease-precise);
+    opacity: 0;
+    transform: translateY(12px);
+    animation: cardReveal 400ms var(--ease-organic) forwards;
+  }
+
+  .job-card:hover {
+    border-color: var(--accent-peach);
+    box-shadow: var(--shadow-card);
+  }
+
+  @keyframes cardReveal {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .job-company {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    background: var(--surface-dark);
+    color: var(--surface-dark-text);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-radius: 2px;
+    align-self: flex-start;
+  }
+
+  .job-title {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.35;
+  }
+
+  .job-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+  }
+
+  .job-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .job-meta-item svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    stroke: var(--accent-coral);
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .job-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  .skill-badge {
+    display: inline-flex;
+    padding: 0.15rem 0.5rem;
+    border: 1px solid var(--grid-line);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6875rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.04em;
+    border-radius: 2px;
+    background: var(--bg-primary);
+  }
+
+  .job-description {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .job-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--grid-line-light);
+  }
+
+  .job-yoe {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6875rem;
+    color: var(--text-tertiary);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .job-yoe svg {
+    width: 13px; height: 13px;
+    stroke: var(--text-tertiary);
+    fill: none; stroke-width: 1.5;
+    stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  .apply-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    background: var(--accent-coral);
+    color: #fff;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    transition: background 150ms var(--ease-precise), transform 150ms var(--ease-precise);
+  }
+
+  .apply-btn:hover {
+    background: #b55a28;
+    transform: translateY(-1px);
+  }
+
+  .apply-btn:active { transform: translateY(0); }
+
+  .apply-btn svg {
+    width: 14px; height: 14px;
+    stroke: currentColor;
+    fill: none; stroke-width: 2;
+    stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  .apply-btn--disabled {
+    background: var(--grid-line);
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  .empty-state p {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-style: italic;
+    font-size: 1.125rem;
+    color: var(--text-tertiary);
+  }
+
+  /* Decorative blob */
+  .blob-decoration {
+    position: fixed;
+    bottom: -120px;
+    right: -80px;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, var(--accent-sand) 0%, var(--accent-peach) 40%, var(--accent-lavender) 100%);
+    border-radius: 60% 40% 50% 45% / 45% 55% 40% 60%;
+    filter: blur(60px);
+    opacity: 0.25;
+    pointer-events: none;
+    animation: morph 8s ease-in-out infinite alternate;
+    z-index: 0;
+  }
+
+  @keyframes morph {
+    0%   { border-radius: 60% 40% 50% 45% / 45% 55% 40% 60%; }
+    50%  { border-radius: 45% 55% 40% 60% / 60% 40% 55% 45%; }
+    100% { border-radius: 50% 45% 55% 40% / 40% 60% 45% 55%; }
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 1.75rem; }
+    .filter-bar { flex-direction: column; padding: 1rem; }
+    .filter-group, .filter-group.search { min-width: 100%; flex: auto; }
+    .jobs-container { grid-template-columns: 1fr; padding: 1rem; }
+    .job-card { padding: 1.25rem; }
+    .result-count { align-self: start; }
+  }
+</style>
+</head>
+<body>
+
+<div class="blob-decoration"></div>
+
+<header class="header">
+  <h1>HN <span>Jobs</span></h1>
+  <p class="header-subtitle">May 2026 — Who is hiring?</p>
+</header>
+
+<div class="filter-bar">
+  <div class="filter-group search">
+    <label class="filter-label" for="search">Search</label>
+    <input class="filter-input" type="text" id="search" placeholder="Title, company, skill, keyword...">
+  </div>
+  <div class="filter-group">
+    <label class="filter-label" for="location">Location</label>
+    <select class="filter-input" id="location">
+      <option value="">All locations</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label class="filter-label" for="salary">Min Salary (K)</label>
+    <input class="filter-input" type="number" id="salary" placeholder="e.g. 150" min="0" step="10">
+  </div>
+  <div class="result-count" id="result-count"></div>
+</div>
+
+<main class="jobs-container" id="jobs-container"></main>
+
+<script>
+const JOBS = [
+{"item_id":"47660343","title":"Multiple Roles (Product Engineers, Backend Engineers, AI Research Engineers, and more)","company":"PostHog","yoe":null,"salary":null,"skills":["ClickHouse"],"location":"Remote","description_summary":"PostHog is hiring across many roles including product engineers, AI product engineers, backend engineers, ClickHouse operations engineers, product managers, and more. They build an open-source product analytics suite combining analytics, feature flags, session replay, a data warehouse, and CDP.","source_url":null},
+{"item_id":"47667011","title":"Forward Deployed Engineer","company":"HackerRank","yoe":null,"salary":null,"skills":[],"location":"Santa Clara, New York, London, Bangalore (hybrid 3-4 days/week in-office)","description_summary":"HackerRank is hiring a Forward Deployed Engineer to help customers implement new AI-era hiring processes. The role bridges product and customer teams, requiring technical fluency and strong communication to work directly with engineering leaders redesigning how they evaluate developer talent.","source_url":null},
+{"item_id":"47713744","title":"AI Agent Engineer","company":"CollectWise","yoe":"3+","salary":"$200K - $300K","skills":["Node.js","AWS","SQL","LiveKit","SIP trunking"],"location":"New York, NY, US","description_summary":"CollectWise is hiring an AI Agent Engineer to build voice AI infrastructure for automated debt collection. The role involves designing real-time voice agent systems with LiveKit, owning prompting strategy, and building testing frameworks to maximize agent performance across millions of consumer interactions.","source_url":"https://www.ycombinator.com/companies/collectwise/jobs/Ktc6m6o-ai-agent-engineer"},
+{"item_id":"47720918","title":"Founding Product Engineer","company":"Bild AI","yoe":"Any (new grads ok)","salary":"$100K - $180K","skills":["JavaScript","React","TypeScript","Tailwind","Python"],"location":"San Francisco, CA, US (in-office)","description_summary":"Bild AI is hiring a Founding Product Engineer to build UIs that simplify complex blueprint and hardware data for the construction industry. The role is full-stack (React frontend, Python backend) with end-to-end feature ownership, customer interviews, and product direction influence.","source_url":"https://www.ycombinator.com/companies/bild-ai/jobs/dDMaxVN-founding-product-engineer"},
+{"item_id":"47741953","title":"Multiple Roles (Application Security Engineer, Customer Success Manager, Sales Development Representative)","company":"EasyPost","yoe":null,"salary":null,"skills":[],"location":"Remote / Lehi, Utah","description_summary":"EasyPost is hiring for Application Security Engineer (Remote), Customer Success Manager III (Lehi, Utah), and Sales Development Representative II (Lehi, Utah). EasyPost provides high-performance shipping APIs and logistics infrastructure for businesses.","source_url":"https://www.easypost.com/careers"},
+{"item_id":"47775606","title":"Growth Marketer","company":"MDalgorithms Inc.","yoe":"3+","salary":"$80K - $140K","skills":["Growth design","Marketing design","Email marketing","A/B testing","Webflow"],"location":"Remote (GB; US)","description_summary":"MDalgorithms is hiring a Growth Marketer to drive acquisition, retention, and experimentation across three DTC healthcare brands (MDhair, MDacne, Nuvane). The role is a hands-on generalist position covering email flows, funnel analysis, landing page creation, and creative strategy, reporting directly to the CEO.","source_url":"https://www.ycombinator.com/companies/mdalgorithms-inc/jobs/LVODKN7-growth-marketer-for-a-rapidly-growing-consumer-ai-healthcare-startup"},
+{"item_id":"47777902","title":"Founding Engineer","company":"Proliferate","yoe":"Any (new grads ok)","salary":"$200K - $350K","skills":["TypeScript","React","Next.js","Python","Postgres","Redis","AWS","Rust"],"location":"San Francisco, CA, US (in-office)","description_summary":"Proliferate is hiring a Founding Engineer to build the core product of their operating system for modern engineering. The high-ownership role spans agent runtime, product UI, and cloud infrastructure, working closely with the founder in a small, talent-dense team.","source_url":"https://www.ycombinator.com/companies/proliferate/jobs/L3copvK-founding-engineer"},
+{"item_id":"47781912","title":"Founding Engineer","company":"Adaptional","yoe":"1+","salary":"$180K - $280K","skills":[],"location":"San Francisco, CA, US (in-office, Presidio)","description_summary":"Adaptional is hiring a Founding Engineer to build AI agents for insurance claims review. The role involves building new AI agents, obsessing over evals and correctness in regulated domains, and working directly with top-10 insurance company customers. Backed by a $10M seed round.","source_url":"https://www.ycombinator.com/companies/adaptional/jobs/k7W6ge9-founding-engineer"},
+{"item_id":"47789607","title":"Founding GTM & Operations Lead","company":"RamAIn","yoe":"1-5","salary":"$120K - $180K","skills":[],"location":"San Francisco, CA, US","description_summary":"RamAIn (YC W26) is hiring a Founding GTM & Operations Lead as their first business hire. The role owns go-to-market, early enterprise sales pipeline, marketing, and company operations for their fast computer-use AI agents that automate enterprise workflows on legacy systems.","source_url":"https://www.ycombinator.com/companies/ramain/jobs/bwtwd9W-founding-gtm-operations-lead"},
+{"item_id":"47802016","title":"Harness Engineer","company":"Substrate","yoe":"3+","salary":"$140K - $200K","skills":["ML","AI","LLM","Python"],"location":"San Francisco, CA, US (hybrid, 3 days/week)","description_summary":"Substrate is hiring a Harness Engineer to build systems around their AI agents for healthcare revenue cycle management. The role involves designing agents for claims processing, deploying them safely in sensitive healthcare environments, and developing measurement infrastructure for agent behavior across tens of millions of claims.","source_url":"https://www.ycombinator.com/companies/substrate/jobs/QJU9023-harness-engineer"},
+{"item_id":"47808047","title":"Head of Engineering","company":"Kyber","yoe":"6+","salary":"$220K - $280K","skills":["Express","JavaScript","Node.js","PostgreSQL","React","Redis","TypeScript"],"location":"New York, NY, US","description_summary":"Kyber is hiring a hands-on Head of Engineering with a path to CTO for their AI-native enterprise document platform. The role owns end-to-end technical decisions, ships features personally, scales adoption of AI coding tools, and leads a team that has 40x'd revenue and landed seven-figure contracts with insurance enterprises.","source_url":"https://www.ycombinator.com/companies/kyber/jobs/TcEa3b5-head-of-engineering"},
+{"item_id":"47810507","title":"Game Platform Engineering Lead","company":"ARC Prize Foundation","yoe":"6+","salary":"$150K - $250K","skills":["Python","AWS","Distributed Systems","Software Architecture"],"location":"Remote (US)","description_summary":"ARC Prize Foundation is hiring a senior engineer to own and evolve the Python game engine and real-time play infrastructure behind the ARC-AGI benchmark series. The role covers session routing, scorecard management, recording pipelines, and laying foundations for ARC-AGI-4 and ARC-AGI-5.","source_url":"https://www.ycombinator.com/companies/arc-prize-foundation/jobs/AKZRZDN-platform-engineer-benchmark-lead"},
+{"item_id":"47851456","title":"Member of Technical Staff, Product Engineering","company":"Trellis AI","yoe":"Any (new grads ok)","salary":"$100K - $225K","skills":["Python","Go","PyTorch","TensorFlow","Transformers","Postgres","Docker","Kubernetes","AWS","Azure","GCP"],"location":"San Francisco, CA, US","description_summary":"Trellis AI is hiring a full-stack Product Engineer to build computer-use agents that automate healthcare paperwork including prior authorizations and appeals. The role involves building agentic frameworks for healthcare decision-making and production-grade AI systems, backed by YC and General Catalyst with 10x recent revenue growth.","source_url":"https://www.ycombinator.com/companies/trellis-ai/jobs/SvzJaTH-member-of-technical-staff-product-engineering-full-time"},
+{"item_id":"47874734","title":"Multiple Roles (Full Stack Product Engineer, Account Executive, Defense Lead, GTM Engineer, and more)","company":"Jiga","yoe":null,"salary":null,"skills":[],"location":"Remote (EMEA / US / Anywhere)","description_summary":"Jiga is hiring across engineering, sales, and marketing for their manufacturing sourcing platform used by NASA, Tesla, and Google. They are profitable, growing 3x YoY, and operate fully remote with async-first culture. Open roles include Full Stack Product Engineer, Account Executives, Defense Lead, and GTM Engineer.","source_url":"https://jiga.io/about-us/"},
+{"item_id":"47908047","title":"Applied AI Strategist - Market Intelligence (Health)","company":"Terra API","yoe":"3+","salary":"£40K - £120K GBP","skills":[],"location":"London, England, GB","description_summary":"Terra API is hiring an Applied AI Strategist to run a continuous loop of market intelligence for their health data infrastructure platform. The role involves talking to builders, segmenting markets, spotting product patterns from usage data, and feeding decision-grade direction to product and GTM teams in the AI x health space.","source_url":"https://www.ycombinator.com/companies/terra-api/jobs/DY7BCZU-applied-ai-strategist-market-intelligence-health"},
+{"item_id":"47937203","title":"Full Stack Engineer (Americas)","company":"Infisical","yoe":null,"salary":"$100K - $180K","skills":["React.js","Node.js","TypeScript","Go"],"location":"Remote (Americas)","description_summary":"Infisical is hiring a Full Stack Engineer to build their open source security infrastructure platform for secrets, certificates, and privileged access management. The role involves developing features across PKI, SSH, and KMS product lines while communicating directly with enterprise customers.","source_url":"https://jobs.ashbyhq.com/infisical/782b9da8-20e1-48b2-919e-6c5430c58628"},
+{"item_id":"47947125","title":"Founding Customer Success Lead","company":"Stardex","yoe":"1+","salary":"$70K - $110K","skills":["SQL","Intercom","Linear"],"location":"New York, NY, US / Remote (US; CA; GB)","description_summary":"Stardex is hiring their first dedicated Customer Success Lead for their AI-native ATS and CRM built for executive search firms. The role defines support processes from scratch, owns frontline support triage, bug reporting, customer education, and relationship management, working directly with founders.","source_url":"https://www.ycombinator.com/companies/stardex/jobs/6GCK1HC-founding-customer-success-lead"},
+{"item_id":"47955226","title":"Founding Growth Engineer","company":"Gooseworks","yoe":"Any (new grads ok)","salary":"$140K - $200K","skills":["Claude Code","AI agents"],"location":"San Francisco, CA, US","description_summary":"Gooseworks is hiring a Founding Growth Engineer to build and operate AI-powered growth engines for customers (50%) and R&D to turn successful engines into self-serve product playbooks (50%). The role requires deep experience with Claude Code/AI coding agents and is for someone who lives at the intersection of growth and AI.","source_url":"https://www.ycombinator.com/companies/gooseworks/jobs/ztgY6bD-founding-growth-engineer"},
+{"item_id":"47983385","title":"Senior Forward Deployed Engineer","company":"CollectWise","yoe":"1+","salary":"$240K - $300K","skills":["Node.js","React.js","AWS","SQL","LLMs"],"location":"New York, NY, US","description_summary":"CollectWise is hiring a Senior Forward Deployed Engineer to lead customer implementations end-to-end for their AI-powered debt collection platform. The role blends software engineering with hands-on customer work, building integrations, configuring AI agents, and translating business requirements into technical solutions.","source_url":"https://www.ycombinator.com/companies/collectwise/jobs/rEWfZ6R-senior-forward-deployed-engineer"},
+{"item_id":"48025244","title":"Founding Engineer","company":"Proliferate","yoe":"Any (new grads ok)","salary":"$200K - $350K","skills":["TypeScript","React","Next.js","Python","Postgres","Redis","AWS","Rust"],"location":"San Francisco, CA, US (in-office)","description_summary":"Proliferate is hiring a Founding Engineer to build the core product of their operating system for modern engineering. The high-ownership role spans agent runtime, product UI, and cloud infrastructure, working closely with the founder in a small, talent-dense team.","source_url":"https://www.ycombinator.com/companies/proliferate/jobs/L3copvK-founding-engineer"},
+{"item_id":"48035223","title":"Fractional Growth Engineer (Contract)","company":"Coverage Cat","yoe":"Entry level","salary":"$15 - $25/hr","skills":["AI tools"],"location":"Remote (US, excluding CA, MA, NJ, OR, WA, CT, IL, RI, MD, MI, NH, HI)","description_summary":"Coverage Cat is hiring a fractional Growth Engineer on contract to support organic growth engineering for the world's AI-native insurance broker. The role ranges from designing AI growth tools to hiring in-person canvassers, requiring a growth mindset and willingness to overcome operational obstacles.","source_url":"https://www.coveragecat.com/careers/engineering/fractional-growth-engineer"},
+{"item_id":"48048339","title":"Backend Engineer, Thinking Systems","company":"GovernGPT","yoe":"1+","salary":"$115K - $175K CAD","skills":["Python","FastAPI","PostgreSQL","Kubernetes","Docker","Nginx","NLP","Prompt Engineering","AWS"],"location":"Montreal, QC, CA (in-office)","description_summary":"GovernGPT is hiring a Backend Engineer to own the database pillar of their AI reasoning systems for automating fundraising in asset management. The role involves architecting backend services for document preprocessing, building data models for advanced LLM reasoning, and developing patterns for agents to operate safely in secure environments.","source_url":"https://www.ycombinator.com/companies/governgpt/jobs/hRyltS0-backend-engineer-thinking-systems"},
+{"item_id":"48068732","title":"Multiple Roles (Staff Platform Engineer, Senior Account Manager)","company":"Mux","yoe":null,"salary":null,"skills":[],"location":"Remote (US) / New York","description_summary":"Mux is hiring Staff Platform Engineers (Remote, US) and a Senior Account Manager (New York). Mux builds video infrastructure for developers including video encoding/streaming and monitoring, serving customers like Reddit, Vimeo, and Robinhood. Backed by Coatue, Accel, and Andreessen Horowitz.","source_url":"https://www.mux.com/jobs"},
+{"item_id":"48083251","title":"Multiple Roles (Electrical Engineer, Mechatronics Engineer, Computer Vision Engineer, ML Engineer, Robotics Engineer, and more)","company":"9 Mothers","yoe":null,"salary":"$150K - $400K","skills":["Computer Vision","Machine Learning","Robotics","Embedded Systems"],"location":"Austin, TX (on-site)","description_summary":"9 Mothers is hiring across 10 roles in mechanical engineering and software engineering, all based on-site in Austin. Positions include senior and staff levels for Electrical Engineers, Mechatronics Engineers, Computer Vision Engineers, ML Engineers, Embedded Engineers, Perception Engineers, and Robotics Engineers.","source_url":"https://jobs.ashbyhq.com/9-mothers?utm_source=x8pZ4B3P3Q"},
+{"item_id":"48098122","title":"Founding Product Engineer","company":"Bild AI","yoe":null,"salary":"$120K - $180K","skills":[],"location":"San Francisco (on-site)","description_summary":"Bild AI is hiring a Founding Product Engineer. The listing on their jobs page is minimal, showing salary range of $120K-$180K with 0.1%-0.8% equity, full-time and on-site in San Francisco.","source_url":"https://bild.ai/jobs"},
+{"item_id":"48107024","title":"The Blaze \"No AI Summer\" Internship","company":"Text Blaze","yoe":null,"salary":"$2K - $5K/month","skills":["JavaScript","Python","React","Google Cloud"],"location":"Remote","description_summary":"Text Blaze is offering a summer internship that bans AI tool usage to train engineers in fundamentals. The full-stack role uses JavaScript/React/Python/GCP and is aimed at late-college or early-career candidates who want to develop engineering skills without AI assistance.","source_url":"https://www.ycombinator.com/companies/text-blaze/jobs/P4CCN62-the-blaze-no-ai-summer-internship"},
+{"item_id":"48120776","title":"Technical Success Manager","company":"Substrate","yoe":"3+","salary":"$100K - $130K","skills":["SQL","LLM","AI"],"location":"San Francisco, CA, US (hybrid, 3 days/week)","description_summary":"Substrate is hiring a Technical Success Manager to own client relationships for their AI-native healthcare RCM platform. The role involves investigating production issues down to root cause, querying databases, tracing through code, and building autonomous diagnostic tools, working across 500k+ healthcare claims monthly.","source_url":"https://www.ycombinator.com/companies/substrate/jobs/T2fMBhD-technical-success-manager"}
+];
+
+// Filter out "No Current Openings"
+const jobs = JOBS.filter(j => !/no current openings/i.test(j.title) && !/no open positions/i.test(j.title));
+
+// Salary parsing — extract low-end annual K value
+function parseSalaryMinK(s) {
+  if (!s) return null;
+  if (/\/hr/i.test(s)) {
+    const m = s.match(/[\d,.]+/);
+    return m ? Math.round(parseFloat(m[0].replace(/,/g, '')) * 2080 / 1000) : null;
+  }
+  if (/\/month/i.test(s)) {
+    const m = s.match(/([\d,.]+)\s*K?/i);
+    if (!m) return null;
+    let v = parseFloat(m[1].replace(/,/g, ''));
+    if (/K/i.test(s.slice(s.indexOf(m[0]), s.indexOf(m[0]) + m[0].length + 2))) v *= 1000;
+    return Math.round((v * 12) / 1000);
+  }
+  const m = s.match(/[\$£€]?([\d,.]+)\s*(K)?/i);
+  if (!m) return null;
+  let v = parseFloat(m[1].replace(/,/g, ''));
+  if (m[2]) return Math.round(v);
+  return Math.round(v / 1000);
+}
+
+jobs.forEach(j => { j._salaryMinK = parseSalaryMinK(j.salary); });
+
+// Location bucketing
+function normalizeLocation(loc) {
+  if (!loc) return 'Unknown';
+  const l = loc.toLowerCase();
+  if (/remote/i.test(l)) return 'Remote';
+  if (/san francisco|sf\b/i.test(l)) return 'San Francisco';
+  if (/new york|nyc/i.test(l)) return 'New York';
+  if (/austin/i.test(l)) return 'Austin';
+  if (/london/i.test(l)) return 'London';
+  if (/montreal/i.test(l)) return 'Montreal';
+  return loc.split(',')[0].split('(')[0].trim();
+}
+
+const locBuckets = {};
+jobs.forEach(j => {
+  const n = normalizeLocation(j.location);
+  locBuckets[n] = (locBuckets[n] || 0) + 1;
+});
+const locationSelect = document.getElementById('location');
+Object.entries(locBuckets)
+  .sort((a, b) => b[1] - a[1])
+  .forEach(([loc, count]) => {
+    const o = document.createElement('option');
+    o.value = loc;
+    o.textContent = loc + ' (' + count + ')';
+    locationSelect.appendChild(o);
+  });
+
+// SVG icon fragments
+const ico = {
+  pin: '<svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+  dollar: '<svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>',
+  arrow: '<svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>',
+  clock: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+};
+
+function esc(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+// Render
+const container = document.getElementById('jobs-container');
+const countEl = document.getElementById('result-count');
+
+function renderJobs(list) {
+  container.innerHTML = '';
+  countEl.textContent = list.length + ' of ' + jobs.length + ' jobs';
+
+  if (list.length === 0) {
+    container.innerHTML = '<div class="empty-state"><p>No jobs match your filters. Try broadening your search.</p></div>';
+    return;
+  }
+
+  list.forEach((job, i) => {
+    const card = document.createElement('article');
+    card.className = 'job-card';
+    card.style.animationDelay = Math.min(i * 50, 500) + 'ms';
+
+    const hasUrl = !!job.source_url;
+    const skillsHtml = job.skills.length
+      ? '<div class="job-skills">' + job.skills.map(s => '<span class="skill-badge">' + esc(s) + '</span>').join('') + '</div>'
+      : '';
+
+    const yoeHtml = job.yoe
+      ? '<span class="job-yoe">' + ico.clock + ' ' + esc(job.yoe) + ' yoe</span>'
+      : '<span class="job-yoe"></span>';
+
+    card.innerHTML =
+      '<span class="job-company">' + esc(job.company) + '</span>' +
+      '<h2 class="job-title">' + esc(job.title) + '</h2>' +
+      '<div class="job-meta">' +
+        '<span class="job-meta-item">' + ico.pin + ' ' + esc(job.location || 'Not specified') + '</span>' +
+        '<span class="job-meta-item">' + ico.dollar + ' ' + esc(job.salary || 'Not listed') + '</span>' +
+      '</div>' +
+      skillsHtml +
+      '<p class="job-description">' + esc(job.description_summary) + '</p>' +
+      '<div class="job-footer">' +
+        yoeHtml +
+        (hasUrl
+          ? '<a class="apply-btn" href="' + esc(job.source_url) + '" target="_blank" rel="noopener">Apply ' + ico.arrow + '</a>'
+          : '<span class="apply-btn apply-btn--disabled">No link</span>') +
+      '</div>';
+
+    container.appendChild(card);
+  });
+}
+
+// Filtering
+const searchInput = document.getElementById('search');
+const salaryInput = document.getElementById('salary');
+
+function applyFilters() {
+  const q = searchInput.value.toLowerCase().trim();
+  const locFilter = locationSelect.value;
+  const minSalary = parseInt(salaryInput.value) || 0;
+
+  const filtered = jobs.filter(job => {
+    if (q) {
+      const hay = [job.title, job.company, job.description_summary, job.location, job.salary, ...job.skills]
+        .filter(Boolean).join(' ').toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    if (locFilter && normalizeLocation(job.location) !== locFilter) return false;
+    if (minSalary > 0) {
+      if (job._salaryMinK === null || job._salaryMinK < minSalary) return false;
+    }
+    return true;
+  });
+
+  renderJobs(filtered);
+}
+
+searchInput.addEventListener('input', applyFilters);
+locationSelect.addEventListener('change', applyFilters);
+salaryInput.addEventListener('input', applyFilters);
+
+renderJobs(jobs);
+</script>
+</body>
+</html>

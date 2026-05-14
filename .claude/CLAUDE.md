@@ -35,3 +35,6 @@ Each stage is idempotent. State tracks which items reached which stage. Re-runni
 - **New data source:** Add a fetcher function in `tools/fetcher.py`, wire it into `fetch_job_content`'s resolution chain.
 - **New pipeline stage:** Add state tracking in `tools/state.py`, a CLI command in `cli.py`, and update `.claude/commands/hn-jobs.md` flow.
 - **CV matching:** `/assess-cv <path>` scores a CV against all jobs in `jobs.jsonl` using the `assess-cv` skill. Output goes to `data/matches/<candidate-slug>.jsonl`. The skill (`.claude/skills/assess-cv.md`) is the source of truth for scoring dimensions and schema.
+
+## Brand Guidelines
+- When creating UIs, follow the brand guidelines in @.claude/references/DESIGN.md and invoke the `frontend-design-skill`
