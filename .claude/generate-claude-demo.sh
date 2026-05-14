@@ -8,6 +8,17 @@ set -euo pipefail
 
 PROJECT="${1:?Usage: $0 <project-name>}"
 
+# Guard: don't create a project inside a .claude/ directory
+TARGET_DIR="$(cd "$(dirname "$0")" && pwd)/$PROJECT"
+if echo "$TARGET_DIR" | grep -q '\.claude'; then
+    echo "Error: This script would create a project inside a .claude/ directory." >&2
+    echo "Copy the script somewhere else first, then run it:" >&2
+    echo "" >&2
+    echo "  cp $0 ~/generate-claude-demo.sh" >&2
+    echo "  cd ~ && ./generate-claude-demo.sh $PROJECT" >&2
+    exit 1
+fi
+
 if [ -d "$PROJECT" ]; then
     echo "Error: Directory '$PROJECT' already exists." >&2
     exit 1
