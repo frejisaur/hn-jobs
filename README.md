@@ -172,4 +172,4 @@ The repo includes sample data from a real pipeline run so you can explore the ou
 
 ## License
 
-MIT
+GNU GPL-3.0
