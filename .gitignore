@@ -1,0 +1,6 @@
+# mac files
+*.DS_store
+
+# python files
+*__pycache__
+*.egg
